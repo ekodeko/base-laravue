@@ -14,7 +14,7 @@ import {
 import { dashboard } from '@/routes';
 import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/vue3';
-import { BookOpen, Folder, LayoutGrid, Boxes, HandCoins } from 'lucide-vue-next';
+import { BookOpen, Folder, LayoutGrid, Boxes, HandCoins, Users, ArrowRightLeft } from 'lucide-vue-next';
 import AppLogo from './AppLogo.vue';
 
 const mainNavItems: NavItem[] = [
@@ -25,13 +25,23 @@ const mainNavItems: NavItem[] = [
     },
     {
         title: 'Category',
-        href: '/master/category',
+        href: '/master/categories',
         icon: Boxes,
     },
     {
         title: 'Account',
         href: '/master/accounts',
         icon: HandCoins,
+    },
+    {
+        title: 'Contact',
+        href: '/master/contacts',
+        icon: Users,
+    },
+    {
+        title: 'Transaction',
+        href: '/master/transactions',
+        icon: ArrowRightLeft,
     },
 ];
 
